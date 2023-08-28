@@ -1,0 +1,192 @@
+.input_container {
+  width: 100%;
+  display: grid;
+  grid-template: repeat(1fr, 2) / 1fr;
+  align-items: start;
+  gap: 10px;
+  position: relative;
+}
+
+.actions {
+  width: 100%;
+  margin: auto;
+  padding: 15px 0;
+  background-color: #151a30;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  position: sticky;
+  top: 0;
+}
+
+.action_btn {
+  padding: 10px;
+  font-size: 1.3rem;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  background: transparent center / contain no-repeat;
+  cursor: pointer;
+}
+.action_btn:not(.copy):not(.clear):not(.share.success):hover {
+  outline: 2px solid #fff;
+}
+
+.icon_btn {
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  background: no-repeat center / 70%;
+}
+
+.undo {
+  background-image: url('@/img/undo.svg');
+}
+
+.redo {
+  background-image: url('@/img/redo.svg');
+}
+
+.copy {
+  background-image: url(@/img/copy.svg);
+  transition: background 0.1s linear;
+}
+.copy.success {
+  background-image: url(@/img/copy-check.svg);
+}
+
+.clear {
+  margin-left: auto;
+  background-image: url(@/img/clear.svg);
+}
+
+.share.success {
+  color: #3db593;
+  cursor: auto;
+}
+
+.setting {
+  width: 100%;
+  margin: 15px auto;
+  font-size: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: start;
+  gap: 0.5rem;
+}
+
+.hk {
+  width: 160px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+
+.hk_title {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.hk_btn {
+  border: none;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: inherit;
+  background-color: #151a30;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.hk_btn:hover {
+  background-color: #102693;
+}
+
+.hk_btn_text {
+  color: inherit;
+}
+
+.hk_btn_esc {
+  font-family: 'consolas';
+}
+
+.flags {
+  font-size: 1.3rem;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.flag {
+  width: 2rem;
+  height: 2rem;
+  font-family: 'consolas';
+  border-radius: 5px;
+  background-color: #151a30;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.flag:hover {
+  background-color: #13226b;
+}
+
+.active_flag {
+  background-color: #102693;
+}
+
+.keyborad {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+}
+
+.main {
+  box-sizing: border-box;
+  display: grid;
+  grid-template: repeat(3, min-content) / 1fr 180px;
+  align-items: start;
+  gap: 20px;
+}
+
+.main div:nth-child(2) {
+  grid-row: 1 / 4;
+  grid-column: 2 / 3;
+}
+
+.ranges {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 15px;
+}
+
+.range {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+}
+
+.btn {
+  border: none;
+  padding: 10px;
+  font-size: 1.1rem;
+  font-family: 'consolas';
+  border-radius: 5px;
+  color: inherit;
+  background-color: #151a30;
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+.btn:hover {
+  background-color: #102693;
+}
