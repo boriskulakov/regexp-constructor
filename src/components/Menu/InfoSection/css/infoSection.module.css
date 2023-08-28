@@ -1,0 +1,57 @@
+.container {
+  max-height: 150px;
+  overflow: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 25px;
+  background-color: #151a30;
+  border-radius: 10px 10px 0 0;
+  padding: 25px 15px 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(calc(-100% + 15px));
+}
+
+.main {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 20px;
+}
+
+.info {
+  font-size: 1.1rem;
+  font-family: 'consolas';
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 7px;
+}
+
+.symbol {
+  font-size: 1.3rem;
+  color: #3db593;
+}
+
+.explanation {
+  font-family: 'Inter';
+}
+
+.link {
+  color: inherit;
+  outline: none;
+  text-decoration: none;
+  border-bottom: 1px solid#fff;
+}
+.link:hover {
+  border-color: #41afef;
+}
+
+.notes {
+  width: 100%;
+  font-size: 1.1rem;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 10px;
+}

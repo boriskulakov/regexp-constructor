@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: 'consolas';
+  src: local('consolas'), url('@/fonts/consolas.ttf') format('truetype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: local('Inter'), url('@/fonts/Inter.ttf') format('truetype');
+  font-weight: normal;
+}

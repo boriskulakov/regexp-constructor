@@ -1,0 +1,72 @@
+.methods {
+  font-size: 1.2rem;
+  font-family: 'consolas';
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #151a30;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.2s;
+  cursor: pointer;
+  position: relative;
+}
+.methods:hover {
+  background-color: #102693;
+}
+.methods.open {
+  border-radius: 5px 5px 0 0;
+}
+.methods.copied::after {
+  content: 'Код скопирован';
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1.2rem;
+  font-family: 'consolas';
+  color: #fff;
+}
+
+.select {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.arrow {
+  width: 25px;
+  height: 25px;
+  background: url('@/img/arrow-down.svg') center / contain no-repeat;
+}
+.arrow.open {
+  background-image: url('@/img/arrow-up.svg');
+}
+.methods.copied .arrow {
+  background-image: url('@/img/copy-check.svg');
+}
+.container {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #151a30;
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+}
+
+.button {
+  font-size: 1.1rem;
+  text-align: left;
+  font-family: 'consolas';
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #151a30;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #102693;
+}

@@ -1,0 +1,22 @@
+.container {
+  position: fixed;
+  background-color: #151a30;
+  border: none;
+  outline: none;
+  display: flex;
+  flex-flow: column nowrap;
+  box-sizing: border-box;
+}
+
+.button {
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 10px;
+  border: none;
+  color: #fff;
+  background-color: #151a30;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #3db593b5;
+}

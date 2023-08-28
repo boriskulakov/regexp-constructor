@@ -1,0 +1,74 @@
+.container {
+  box-sizing: border-box;
+  outline: 2px solid #fff;
+  transition: outline 0.2s;
+}
+.container:focus {
+  outline: 2px solid #3db593;
+}
+
+.symbols {
+  padding: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+.symbol {
+  font-size: 1.7rem;
+  padding: 3px 1px;
+  font-family: 'consolas';
+}
+
+.group_bracket_open {
+  padding-left: 5px;
+}
+
+.group_bracket_close {
+  padding-right: 5px;
+}
+
+.escaped {
+  color: #a490ec;
+}
+
+.quantifier {
+  color: #cb7d42;
+}
+
+.set_bracket {
+  color: #57afef;
+}
+
+.special {
+  color: #c677bb;
+}
+
+.special_group {
+  color: #15ecf0d1;
+}
+
+.named_group {
+  color: #e47474;
+}
+
+.cursor {
+  width: 0px;
+  height: 2rem;
+  outline: 1px solid #3db593;
+}
+.container:focus .cursor {
+  animation: 1.5s blink infinite both linear;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
