@@ -3,7 +3,7 @@ import classNames from 'classnames'
 
 import { InsertType, Patterns } from '@/types/types'
 
-type Handler = ({ pattern }: { pattern: InsertType }) => void
+type Handler = (pattern: InsertType) => void
 
 interface ButtonsProps {
   patternType: string
@@ -42,7 +42,7 @@ function Buttons({
             styles.btn,
             isHotkeyActive && styles.btn_hotkey
           )}
-          onClick={() => handler({ pattern })}
+          onClick={() => handler(pattern)}
           data-code={pattern.code}
         >
           <span className={classNames(styles.insertValue)}>

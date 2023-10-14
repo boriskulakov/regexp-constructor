@@ -157,8 +157,8 @@ function RegexpConstructor() {
     setCurrentInsert({ insert: `method.${method}` })
   }
 
-  const insertByButton = ({ pattern }: { pattern: InsertType }) => {
-    setCurrentInsert(pattern)
+  const insertByButton = (pattern: InsertType) => {
+    setCurrentInsert({ ...pattern })
   }
 
   useEffect(() => {
@@ -277,7 +277,7 @@ function RegexpConstructor() {
                 <button
                   key={range.text}
                   className={classNames(styles.btn)}
-                  onClick={() => insertByButton({ pattern: range })}
+                  onClick={() => insertByButton(range)}
                 >
                   {range.text}
                 </button>
@@ -288,7 +288,7 @@ function RegexpConstructor() {
                 <button
                   key={range.text}
                   className={classNames(styles.btn)}
-                  onClick={() => insertByButton({ pattern: range })}
+                  onClick={() => insertByButton(range)}
                 >
                   {range.text}
                 </button>
